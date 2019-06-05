@@ -34,6 +34,9 @@ int main(int argc, const char *argv[]) {
     fseek(fd, 0, SEEK_SET);
     id++;
     fwrite(&id, sizeof(id), 1, fd);
+
+    printf("Stored succesfully\n");
+
     fclose(fd);
     return 0;
 }
